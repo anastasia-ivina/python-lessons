@@ -114,5 +114,5 @@ with open("text_7.txt", "r", encoding="utf-8") as file_7:
     final_list = [{firm: income for firm, income in zip(name_list, div_list)},{file_translate.translate('average_profit'): (reduce(new_funct, aver_profit) / 4) }]
     print(final_list)
 import json
-with open("my_file.json", "w") as write_f:
-    json.dump(final_list, write_f)
+with open("my_file.json", "w", encoding="utf-8") as write_f:
+    json.dump(final_list, write_f, ensure_ascii=False)
